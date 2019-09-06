@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b8946224-2f40-497a-979f-a68a92485199",
+		"name": "GET - BARRAGEM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - BARRAGEM",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "UkFGQUVMMTIzNDU2Nzg5",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "{{url}}/barragem/buscar?id=001 ",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"barragem",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "001 "
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "GET - BARRAGEM",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "UkFGQUVMMTIzNDU2Nzg5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/barragem/buscar?id=001 ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"barragem",
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "001 "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\t\"response\":{\n\t\t\"id\":\"001\",\n\t\t\"nome\":\"Brumadinho-MG\",\n\t\t\"tipo\":\"rejeitos de mineração\",\n\t\t\"estado\":\"Minas Gerais\",\n\t\t\"empresa\":\"Vale do Rio Doce\",\n\t\t\"equipamentos\":\"Equipamentos de monitoramento de vazão de agua\",\n\t\t\"numero-legislacao\":\"LEI 2019/7052\"\n\t}\n}"
+				}
+			]
+		}
+	]
+}

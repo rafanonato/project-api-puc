@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "c9cd3878-0127-4ed9-91fa-6ab016198a47",
+		"name": "LOGIN",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-app-key",
+						"value": "UkFGQUVMMTIzNDU2Nzg5",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\":{\n\t\t\"username\":\"rafanonato\",\n\t\t\"password\":\"x3456\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{url}}/autorizar/perfil",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"autorizar",
+						"perfil"
+					]
+				},
+				"description": "My endpoint oath2"
+			},
+			"response": [
+				{
+					"name": "LOGIN",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-app-key",
+								"value": "UkFGQUVMMTIzNDU2Nzg5",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"username\":\"\",\n\t\t\"password\":\"\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{url}}/autorizar/perfil",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"autorizar",
+								"perfil"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n    \"data\": {\n        \"status\": \"sucesso\",\n        \"message\": \"usuário autenticado com sucesso!\",\n        \"username\": \"rafanonato\"\n    }\n}"
+				}
+			]
+		}
+	]
+}

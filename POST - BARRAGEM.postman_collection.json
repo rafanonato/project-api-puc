@@ -1,0 +1,85 @@
+{
+	"info": {
+		"_postman_id": "756c75de-1169-4117-bb5b-6f10bbd9fa5f",
+		"name": "POST - BARRAGEM",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST - BARRAGEM",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "UkFGQUVMMTIzNDU2Nzg5",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\":{\n\t\t\"id\":\"001\",\n\t\t\"nome\":\"Brumadinho-MG\",\n\t\t\"tipo\":\"rejeitos de mineração\",\n\t\t\"estado\":\"Minas Gerais\",\n\t\t\"empresa\":\"Vale do Rio Doce\",\n\t\t\"equipamentos\":\"Equipamentos de monitoramento de vazão de agua\",\n\t\t\"numero-legislacao\":\"LEI 2019/7052\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{url}}/barragem/cadastrar",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"barragem",
+						"cadastrar"
+					]
+				},
+				"description": "Cadastrar barragem"
+			},
+			"response": [
+				{
+					"name": "POST - BARRAGEM",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "UkFGQUVMMTIzNDU2Nzg5",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"id\":\"\",\n\t\t\"nome\":\"\",\n\t\t\"tipo\":\"\",\n\t\t\"estado\":\"\",\n\t\t\"empresa\":\"\",\n\t\t\"equipamentos\":\"\",\n\t\t\"numero-legislacao\":\"\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{url}}/barragem/cadastrar",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"barragem",
+								"cadastrar"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\t\"response\":{\n\t\t\"status\":\"sucesso\",\n\t\t\"messagem\":\"barragem criada com sucesso\"\n\t}\n}"
+				}
+			]
+		}
+	]
+}

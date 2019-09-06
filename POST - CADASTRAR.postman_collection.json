@@ -1,0 +1,74 @@
+{
+	"info": {
+		"_postman_id": "ccc7aaf9-a1ca-4b38-a8a4-7c77931552e0",
+		"name": "POST - CADASTRAR",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "CADASTRAR",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"data\":{\n\t\t\"cpf\":\"297409111-01\",\n\t\t\"cod-empresa\":\"001\",\n\t\t\"nome\":\"Rafael Nonato\",\n\t\t\"email\":\"rf.nonato@gmail.com\",\n\t\t\"cod\":\"101656\",\n\t\t\"username\":\"rafanonato\",\n\t\t\"password\":\"X3256\",\n\t\t\"atividade\":\"funcionario\"\n\t}\n}"
+				},
+				"url": {
+					"raw": "{{url}}/cadastrar/perfil",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"cadastrar",
+						"perfil"
+					]
+				},
+				"description": "Cadastrar usuário"
+			},
+			"response": [
+				{
+					"name": "CADASTRAR",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"name": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"data\":{\n\t\t\"cpf\":\"\",\n\t\t\"cod-empresa\":\"\",\n\t\t\"nome\":\"\",\n\t\t\"email\":\"\",\n\t\t\"cod\":\"\",\n\t\t\"username\":\"\",\n\t\t\"password\":\"\",\n\t\t\"atividade\":\"\"\n\t}\n}"
+						},
+						"url": {
+							"raw": "{{url}}/cadastrar/perfil",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"cadastrar",
+								"perfil"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\t\"response\":{\n\t\t\"status\":\"sucesso\",\n\t\t\"message\":\"usuário criado com sucesso\" \n\t}\n}"
+				}
+			]
+		}
+	]
+}

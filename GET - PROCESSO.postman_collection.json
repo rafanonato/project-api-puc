@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "60cb7f99-eebd-41d6-9879-27057c4993e9",
+		"name": "GET - PROCESSO",
+		"description": "Buscar processo!",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - ProcessoBuscar",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-app-key",
+						"value": "UkFGQUVMMTIzNDU2Nzg5",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/processo/buscar?id=001 ",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"processo",
+						"buscar"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "001 "
+						}
+					]
+				},
+				"description": "Encontrar um processo"
+			},
+			"response": [
+				{
+					"name": "ProcessoBuscar",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-app-key",
+								"value": "UkFGQUVMMTIzNDU2Nzg5",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/processo/buscar?id=001 ",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"processo",
+								"buscar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "001 "
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": null,
+					"cookie": [],
+					"body": "{\n\t\"data\":{\n\t\t\"id\":\"001\",\n\t\t\"processo\":\"105255/2019\",\n\t\t\"area\":\"ambiental\",\n\t\t\"legislacao-vigente\":\"LEI Nº 17.123\",\n\t\t\"descricao\":\"Art. 1º Fica proibido no Município de São Paulo o fornecimento de canudos de material plástico aos clientes de hotéis, restaurantes, bares, padarias entre outros estabelecimentos comerciais.\",\n\t\t\"criado-por\":\"rafanonato\"\n\t}\n}\n"
+				}
+			]
+		}
+	]
+}
